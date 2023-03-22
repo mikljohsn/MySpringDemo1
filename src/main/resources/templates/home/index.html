@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MySpringDemo</title>
+    <link th:href="@{/styles/stylesheet.css}" rel="stylesheet">
+</head>
+<body>
+  <h1>Dette er min index side</h1>
+    <div id="wrapper">
+        <div id="left">
+            <form action="/personData" method="post">
+                <label>First name<br></label>
+                <input type="text" name="firstName" placeholder="First name">
+                <label><br>Last name<br></label>
+                <input type="text" name="lastName" placeholder="Last name">
+                <label><br>Address<br></label>
+                <input type="text" name="address" placeholder="Address">
+                <br><input type="submit" value="Send data">
+            </form>
+        </div>
+        <div id="right">
+            <input type="checkbox" name="Vehicle 1" value="bike"> i have a bike<br>
+            <input type="checkbox" name="Vehicle 2" value="car"> i have a car<br>
+            <input type="checkbox" name="Vehicle 3" value="boat" checked="checked"> i have a boat<br>
+        </div>
+    </div>
+
+<!--    <div id="wrapper">
+        <button>button 1</button>
+        <button>button 2</button>
+        <select>
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+        </select>
+    </div>-->
+
+</body>
+</html>
